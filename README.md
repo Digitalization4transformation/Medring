@@ -13,17 +13,6 @@
 - Navigate to https://localhost:3006
 - Check more about [Tailwind CSS](https://tailwindcss.com/)
 
-### Pages
-
-There some simple of sample pages that i created on this template.
-
-Here are all the page from the project:
-
-
-### Fully Responsive
-
-This template provides Responsive Navigation and Mobile Friendly Feature based on Tailwind CSS and Javascript.
-
 ### Licensing
 
 - Copyright 2024 Digitalization4transformation
