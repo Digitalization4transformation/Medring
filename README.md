@@ -29,9 +29,6 @@ This template provides Responsive Navigation and Mobile Friendly Feature based o
 - Copyright 2024 Digitalization4transformation
 - Licensed under **MIT**
 
-### Demo
 
-Demo: <a href="https://thriving-kataifi-7c5d45.netlify.app/">Demo with Netlify</a>
 
-### Donation
 
