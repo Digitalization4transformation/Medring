@@ -26,7 +26,7 @@ This template provides Responsive Navigation and Mobile Friendly Feature based o
 
 ### Licensing
 
-- Copyright Digitalization4transformation
+- Copyright 2024 Digitalization4transformation
 - Licensed under **MIT**
 
 ### Demo
