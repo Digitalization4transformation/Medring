@@ -1,6 +1,3 @@
-# bGreen Template Reactjs <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fteguhoktian%2Fbgreen-template.git&text=Free%20mobile%20friendly%20Reactjs%20Tailwind%20Template%20on%20Github" target="_blank">![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)</a>
-
-![bGreen Template](https://github.com/teguhoktian/bgreen-template/blob/master/public/bGreenMockUp.png?raw=true)
 
 ### Get Started
 
@@ -13,7 +10,7 @@
 - (If not) Run in terminal `npm install`
 - (If not) Run in terminal `npm run build` for build your project
 - (If not) Run in terminal `npm run dev`
-- Navigate to https://localhost:3000
+- Navigate to https://localhost:3006
 - Check more about [Tailwind CSS](https://tailwindcss.com/)
 
 ### Pages
@@ -22,16 +19,6 @@ There some simple of sample pages that i created on this template.
 
 Here are all the page from the project:
 
-- Dashboard
-- Halaman
-  - Blank
-  - 404 Not Found
-- Table dan Form
-  - Table
-  - Form
-- Otentikasi
-  - Login
-  - Register
 
 ### Fully Responsive
 
@@ -39,7 +26,7 @@ This template provides Responsive Navigation and Mobile Friendly Feature based o
 
 ### Licensing
 
-- Copyright 2023 [Raincode.My.Id](https://raincode.my.id)
+- Copyright Digitalization4transformation
 - Licensed under **MIT**
 
 ### Demo
@@ -48,4 +35,3 @@ Demo: <a href="https://thriving-kataifi-7c5d45.netlify.app/">Demo with Netlify</
 
 ### Donation
 
-Buy Me some Cofee and Snack with Donate me at [Saweria](https://saweria.co/raincodemyid)
