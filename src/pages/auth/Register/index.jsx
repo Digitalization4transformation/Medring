@@ -5,6 +5,7 @@ import React, { useState} from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ID } from 'appwrite'
 import { account } from "../../../appwrite/appwriteConfig";
+import Logo from '../../../assets/medring.png'
 
 function RegisterIndex() {
   const navigate = useNavigate();
@@ -33,7 +34,7 @@ function RegisterIndex() {
       promise.then(
         function(response){
         // console.log(response)
-        navigate("/");
+        navigate("/dashboard");
         setLoading(true);
       },
         function(error){
@@ -47,8 +48,7 @@ function RegisterIndex() {
 
 
 
-  const registerImage =
-    "https://edp.raincode.my.id/static/media/login.cc0578413db10119a7ff.png";
+  const registerImage = Logo;;
   return (
     <>
       <div className="flex min-h-screen">
@@ -131,7 +131,7 @@ function RegisterIndex() {
                         name="name"
                         onChange={(e) => setUser({...user,name:e.target.value})}
                         className="text-sm placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full md:py-2 py-3 focus:outline-none focus:border-emerald-400"
-                        placeholder="Nama Lengkap"
+                        placeholder="Full name"
                       />
                     </div>
                     {error?.name && (
@@ -177,7 +177,7 @@ function RegisterIndex() {
                         name="confirm_password"
                         onChange={(e) => setUser({...user,confirmPassword:e.target.value})}
                         className="text-sm placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full md:py-2 py-3 focus:outline-none focus:border-emerald-400"
-                        placeholder="Konfirmasi Password"
+                        placeholder="Confirm Password"
                       />
                     </div>
                     {error?.confirm_password && (

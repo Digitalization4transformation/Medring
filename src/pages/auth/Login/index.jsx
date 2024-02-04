@@ -4,12 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { account } from "../../../appwrite/appwriteConfig";
-
+import Logo from '../../../assets/medring.png'
 function LoginIndex() {
   const navigate = useNavigate();
   const [error, setError] = useState(null);
-  // const [email, setEmail] = useState("");
-  // const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
 
   const [user, setUser] = useState({
@@ -21,7 +19,7 @@ function LoginIndex() {
         try {
           setLoading(true)
           await account.createEmailSession(user.email, user.password)
-          navigate("/");
+          navigate("/dashboard");
         } catch (error) {
           console.log(error);
           setError(error);
@@ -36,14 +34,13 @@ function LoginIndex() {
   //   setLoading(true);
   //   navigate("/");
   // };
-  const LoginImage =
-    "https://edp.raincode.my.id/static/media/login.cc0578413db10119a7ff.png";
+  const LoginImage = Logo;
   return (
     <>
       <div className="flex min-h-screen">
         <div className="flex w-full flex-col md:flex-row">
           {/* Image */}
-          <div className="md:bg-emerald-500 md:min-h-screen flex flex-wrap md:w-1/2">
+          <div className="md:bg-[#04a2a3] md:min-h-screen flex flex-wrap md:w-1/2">
             <div className="items-center text-center flex flex-col relative justify-center mx-auto">
               <img
                 src={LoginImage}
@@ -138,7 +135,7 @@ function LoginIndex() {
                         onClick={(e) => {
                           e.preventDefault();
                         }}
-                        className="inline-flex font-semibold text-xs sm:text-sm text-emerald-500 hover:text-emerald-700"
+                        className="inline-flex font-semibold text-xs sm:text-sm text-[#04a2a3] hover:text-[#4fc0c0]"
                       >
                         Forgot password?
                       </Link>
@@ -150,7 +147,7 @@ function LoginIndex() {
                     <button
                       disabled={loading}
                       type="submit"
-                      className="flex items-center justify-center focus:outline-none text-white text-sm bg-emerald-500 hover:bg-emerald-700 rounded-lg md:rounded md:py-2 py-3 w-full transition duration-150 ease-in"
+                      className="flex items-center justify-center focus:outline-none text-white text-sm bg-[#04a2a3] hover:bg-[#41afaf] rounded-lg md:rounded md:py-2 py-3 w-full transition duration-150 ease-in"
                       onClick={login}
                     >
                       <span className="mr-2 md:uppercase">
@@ -197,7 +194,7 @@ function LoginIndex() {
               <div className="flex justify-center items-center  my-6 md:mb-0">
                 <Link
                   to="/auth/register"
-                  className="inline-flex items-center font-bold text-emerald-500 hover:text-emerald-700 text-xs text-center"
+                  className="inline-flex items-center font-bold text-white hover:text-slate-100  text-xs text-center"
                 >
                   <span>
                     <svg
@@ -212,7 +209,7 @@ function LoginIndex() {
                       <path d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
                     </svg>
                   </span>
-                  <span className="ml-2">Don't have an account?</span>
+                  <span className="ml-2 text-[#04a2a3]">Don't have an account?</span>
                 </Link>
               </div>
               {/* End Register Link */}
