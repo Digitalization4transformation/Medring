@@ -4,7 +4,7 @@ import React from "react";
 import DashboardHeader from "../components/Other/DashboardHeader.jsx";
 // import ScrolledCard from "../components/Widget/ScrolledCard.jsx";
 import { useOutletContext } from "react-router-dom";
-import avatarIMg from '../assets/bg-presentation3.jpg'
+import avatarIMg from '../assets/add-30.png'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

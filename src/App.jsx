@@ -12,6 +12,8 @@ import Comprehensive from "./pages/Comprehensive";
 import LandingPage from "./pages/LandingPage";
 import RegisterIndex from "./pages/auth/Register";
 import ChatBot from "./pages/ChatBot";	
+import CompPage1 from "./pages/CompPages1";
+import CompPage2 from "./pages/CompPage2";
 
 function App() {
   return (
@@ -23,7 +25,10 @@ function App() {
         <Route path="/blank" element={<Blank />}></Route>
         <Route path="/chatbot" element={<ChatBot/>}></Route>
         <Route path="/tutorials" element={<Tutorials />}></Route>
+
         <Route path="/comprehensive" element={<Comprehensive />}></Route>
+        <Route path="/Comp1" element={<CompPage1/>}></Route>
+        <Route path="/Comp2" element={<CompPage2/>}></Route>
         <Route path="/profile" element={<Blank />}></Route>
       </Route>
       <Route path="/auth" element={<GuestLayout />}>

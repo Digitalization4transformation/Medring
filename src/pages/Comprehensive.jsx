@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar/Index";
-import { useOutletContext } from "react-router-dom";
+import { NavLink, useOutletContext } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHeart,
@@ -21,20 +21,27 @@ function Comprehensive() {
         <Navbar toggle={sidebarToggle} />
 
         {/* Main Content */}
+
+        
         <div className="mainCard grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {/* Card 1 */}
+          <NavLink to='/Comp1'>
           <div className="border w-full h-40 border-gray-200 bg-white py-4 px-6 rounded-md flex flex-col items-center justify-center">
             <FontAwesomeIcon icon={faHeart} className="text-4xl text-[#0ea6ac] mb-2" />
             <p className="text-base text-gray-600">Self Awareness</p>
             {/* <p className="bottom text-sm text-[#10b349b9] rounded-md px-1 bg-[#d7d8d8] mt-4 ml-32 ">Coming Soon</p> */}
           </div>
+          </NavLink>
 
           {/* Card 2 */}
+          <NavLink to='/Comp2'>
           <div className="border w-full h-40 border-gray-200 bg-white py-4 px-6 rounded-md flex flex-col items-center justify-center">
             <FontAwesomeIcon icon={faShieldVirus} className="text-4xl text-[#0ea6ac] mb-2" />
             <p className="text-base text-gray-600">Preventive Measures</p>
             {/* <p className="bottom text-sm text-[#10b349b9] rounded-md px-1 bg-[#d7d8d8] mt-4 ml-32 ">Coming Soon</p> */}
           </div>
+          </NavLink>
+          
 
           {/* Card 3 */}
           <div className="border w-full h-40 border-gray-200 bg-white py-4 px-6 rounded-md flex flex-col items-center justify-center">
@@ -45,9 +52,9 @@ function Comprehensive() {
 
           {/* Card 4 */}
           <div className="border w-full h-40 border-gray-200 bg-white py-4 px-6 rounded-md flex flex-col items-center justify-center">
-            <FontAwesomeIcon icon={faVirusSlash} className="text-4xl text-[#0ea6ac] mb-2" />
+            <FontAwesomeIcon icon={faVirusSlash} className="text-4xl text-[#707272] mb-2" />
             <p className="text-base text-gray-600">HIV Prevention</p>
-            {/* <p className="bottom text-sm text-[#10b349b9] rounded-md px-1 bg-[#d7d8d8] mt-4 ml-32 ">Coming Soon</p> */}
+            <p className="bottom text-sm text-[#10b349b9] rounded-md px-1 bg-[#d7d8d8] mt-4 ml-32 ">Coming Soon</p>
           </div>
 
           {/* Card 5 */}

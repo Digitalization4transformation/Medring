@@ -27,7 +27,7 @@ function SubMenu({ menu, ...props }) {
             ? {
                 height: "fit-content",
               }
-            : {
+            : { 
                 height: 0,
               }
         }
