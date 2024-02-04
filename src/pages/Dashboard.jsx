@@ -1,65 +1,29 @@
 import React from "react";
-import StatisticWidget from "../components/Widget/Statistic.jsx";
-import AchievementWidget from "../components/Widget/Achievment.jsx";
+// import StatisticWidget from "../components/Widget/Statistic.jsx";
+// import AchievementWidget from "../components/Widget/Achievment.jsx";
 import DashboardHeader from "../components/Other/DashboardHeader.jsx";
-import ScrolledCard from "../components/Widget/ScrolledCard.jsx";
+// import ScrolledCard from "../components/Widget/ScrolledCard.jsx";
 import { useOutletContext } from "react-router-dom";
-import avatarIMg from '../assets/bg-presentation3.jpg'
+import avatarIMg from '../assets/add-30.png'
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faVideo,
+  faComments,
+  faStethoscope,
+  faClinicMedical,
+  faMapLocation,
+  faBook,
+  faUserMd,
+  faNewspaper,
+} from "@fortawesome/free-solid-svg-icons";
+
+
 
 function Dashboard() {
   const avatar = avatarIMg;
     
-  const dataOS = [
-    {
-      title: "Kredit Konsumer",
-      date: "12/Mei/2023",
-      os: "23,938",
-      gs: "20,900",
-      percentage: 200.01,
-      color: "cardInfo",
-    },
-    {
-      title: "Kredit Ritel",
-      date: "12/Mei/2023",
-      os: "3,938",
-      gs: "2,900",
-      percentage: 190.01,
-      color: "cardWarning",
-    },
-    {
-      title: "Kredit KPR & KKB",
-      date: "12/Mei/2023",
-      os: "190,938",
-      gs: "192,900",
-      percentage: 99.01,
-      color: "cardDanger",
-    },
-    {
-      title: "Kredit UMKM",
-      date: "12/Mei/2023",
-      os: "2,938",
-      gs: "2,900",
-      percentage: 100.01,
-      color: "cardSuccess",
-    },
-    {
-      title: "Kredit Komersial",
-      date: "12/Mei/2023",
-      os: "23,938",
-      gs: "20,900",
-      percentage: 200.01,
-      color: "cardLime",
-    },
-    {
-      title: "Kredit BPR & LKM",
-      date: "12/Mei/2023",
-      os: "3,938",
-      gs: "10,900",
-      percentage: 210.01,
-      color: "cardDanger",
-    },
-  ];
-
+  
   const [sidebarToggle] = useOutletContext();
 
   return (
@@ -72,27 +36,67 @@ function Dashboard() {
           user={{ name: "Daniel Koomson" }}
         />
 
-        {/* Laba */}
-        <div className="px-2 mx-auto mainCard">
-          <div className="w-full overflow-hidden text-slate-700 md:grid gap-4 grid md:grid-cols-6">
-            <StatisticWidget className="col-span-4 col-start-1 bg-white" />
-            <AchievementWidget />
-          </div>
-        </div>
-
-        {/* OS Kredit */}
-        <div className="px-2 mx-auto mainCard">
-          <h1 className="text-slate-500 pb-3 text-base md:text-lg">
-            Apps Tools
-          </h1>
-
-          <div className="flex flex-row gap-x-4 overflow-hidden overflow-x-auto justify-between no-scrollbar">
-            {dataOS?.map((data, index) => (
-              <ScrolledCard key={index} data={data} />
-            ))}
+        {/* Main Content */}
+        <div className="mainCard grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          {/* Card 1 */}
+          <div className="border w-full h-40 border-gray-200 bg-white py-4 px-6 rounded-md flex flex-col items-center justify-center">
+            <FontAwesomeIcon icon={faBook} className="text-3xl text-[#0ea6ac] mb-2" />
+            <p className="text-base text-gray-600">Comprehensive</p>
           </div>
 
-          <div className="lg:w-full w-[1024px] overflow-hidden flex flex-row justify-between text-slate-700 gap-2 lg:max-h-screen overflow-x-auto whitespace-nowrap"></div>
+          {/* Card 2 */}
+          <div className="border w-full h-40 border-gray-200 bg-white py-4 px-6 rounded-md flex flex-col items-center justify-center">
+            <FontAwesomeIcon icon={faVideo} className="text-3xl text-[#0ea6ac] mb-2" />
+            <p className="text-base text-gray-600">Video Lesson</p>
+          </div>
+
+          {/* Card 3 */}
+          <div className="border w-full h-40 border-gray-200 bg-white py-4 px-6 rounded-md flex flex-col items-center justify-center">
+            <FontAwesomeIcon icon={faComments} className="text-3xl text-[#0ea6ac] mb-2" />
+            <p className="text-base text-gray-600">Forum</p>
+          </div>
+
+          {/* Card 4 */}
+          <div className="border w-full h-40 border-gray-200 bg-white py-4 px-6 rounded-md flex flex-col items-center justify-center">
+            <FontAwesomeIcon icon={faStethoscope} className="text-3xl text-[#707272] mb-2" />
+            <p className="text-base text-gray-600">Consultation</p>
+            <p className="bottom text-sm text-[#10b349b9] rounded-md px-1 bg-[#d7d8d8] mt-4 ml-32 ">Coming Soon</p>
+          </div>
+
+          {/* Card 5 */}
+          <div className="border w-full h-40 border-gray-200 bg-white py-4 px-6 rounded-md flex flex-col items-center justify-center">
+            <FontAwesomeIcon icon={faNewspaper} className="text-3xl text-[#707272] mb-2" />
+            <p className="text-base text-gray-600">Blog</p>
+            <p className="bottom text-sm text-[#10b349b9] rounded-md px-1 bg-[#d7d8d8] mt-4 ml-32 ">Coming Soon</p>
+          </div>
+
+          {/* Card 6 */}
+          <div className="border w-full h-40 border-gray-200 bg-white py-4 px-6 rounded-md flex flex-col items-center justify-center">
+            <FontAwesomeIcon icon={faMapLocation} className="text-3xl text-[#707272] mb-2" />
+            <p className="text-base text-gray-600">Treatment Centres</p>
+            <p className="bottom text-sm text-[#10b349b9] rounded-md px-1 bg-[#d7d8d8] mt-4 ml-32 ">Coming Soon</p>
+          </div>
+
+          {/* Card 7 */}
+          {/* <div className="border w-full h-40 border-gray-200 bg-white py-4 px-6 rounded-md flex flex-col items-center justify-center">
+            <FontAwesomeIcon icon={faClinicMedical} className="text-3xl text-[#0ea6ac] mb-2" />
+            <p className="text-base text-gray-600">Health Clinics</p>
+          </div> */}
+
+          {/* Card 8 */}
+          <div className="border w-full h-40 border-gray-200 bg-white py-4 px-6 rounded-md flex flex-col items-center justify-center">
+            <FontAwesomeIcon icon={faUserMd} className="text-3xl text-[#707272] mb-2" />
+            <p className="text-base text-gray-600">Specialists</p>
+            <p className="bottom text-sm text-[#10b349b9] rounded-md px-1 bg-[#d7d8d8] mt-4 ml-32 ">Coming Soon</p>
+          </div>
+
+          {/* Card 9 */}
+          <div className="border w-full h-40 border-gray-200 bg-white py-4 px-6 rounded-md flex flex-col items-center justify-center">
+            <FontAwesomeIcon icon={faClinicMedical} className="text-3xl text-[#707272] mb-2" />
+            <p className="text-base text-gray-600">Emergency Services</p>
+            <p className="bottom text-sm text-[#10b349b9] rounded-md px-1 bg-[#d7d8d8] mt-4 ml-32 ">Coming Soon</p>
+            
+          </div>
         </div>
       </main>
     </>

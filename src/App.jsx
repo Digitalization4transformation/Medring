@@ -7,19 +7,28 @@ import AuthLayout from "./components/Layout/AuthLayout";
 import GuestLayout from "./components/Layout/GuestLayout";
 import Login from "./pages/auth/Login";
 import Blank from "./pages/Blank";
-import NotFound from "./pages/NotFound";
-import Form from "./pages/Form";
+import Tutorials from "./pages/Tutorials";
+import Comprehensive from "./pages/Comprehensive";
+import LandingPage from "./pages/LandingPage";
 import RegisterIndex from "./pages/auth/Register";
+import ChatBot from "./pages/ChatBot";	
+import CompPage1 from "./pages/CompPages1";
+import CompPage2 from "./pages/CompPage2";
 
 function App() {
   return (
     <Routes>
+      <Route path="/" element={<Login />}></Route>
       <Route path="/" element={<AuthLayout />}>
-        <Route path="/" element={<Dashboard />}></Route>
+        <Route path="/dashboard" element={<Dashboard />}></Route>
         <Route path="/table" element={<Table />}></Route>
         <Route path="/blank" element={<Blank />}></Route>
-        <Route path="/404" element={<NotFound />}></Route>
-        <Route path="/form" element={<Form />}></Route>
+        <Route path="/chatbot" element={<ChatBot/>}></Route>
+        <Route path="/tutorials" element={<Tutorials />}></Route>
+
+        <Route path="/comprehensive" element={<Comprehensive />}></Route>
+        <Route path="/Comp1" element={<CompPage1/>}></Route>
+        <Route path="/Comp2" element={<CompPage2/>}></Route>
         <Route path="/profile" element={<Blank />}></Route>
       </Route>
       <Route path="/auth" element={<GuestLayout />}>

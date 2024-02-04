@@ -1,35 +1,121 @@
-.chat-container {
-  @apply max-w-2xl mx-auto mt-8 p-4 bg-white rounded-lg shadow-md;
+
+@tailwind utilities;
+@layer utilities {
+  .flex-3 {
+    flex: 3;
+  },
+  .flex-6 {
+    flex: 6;
+  },
+  .flex-9 {
+    flex: 9;
+  }
 }
 
-.chat-messages {
-  @apply space-y-4;
+
+
+*{
+  @apply m-0 p-0 box-border
 }
 
-.message {
-  @apply p-3 rounded-lg shadow-md;
+body{
+  @apply bg-gray-50 text-slate-900 font-poppins 
+}
+.chatContainer {
+  @apply flex min-h-screen;
 }
 
-.user {
-  @apply bg-blue-500 text-white;
+.sideBar {
+  @apply flex-3 border-solid  shadow-md border-[#dcdede]
 }
 
-.bot {
-  @apply bg-gray-200 text-gray-800;
+.main{
+@apply flex-9 mt-[-4]
 }
 
-.message-content {
-  @apply break-words text-gray-800;
+
+.brand{
+    @apply text-3xl mr-8
 }
 
-.message-timestamp {
-  @apply text-xs text-gray-500;
+.upperSide {
+  @apply p-8
+}
+
+.qImg {
+  @apply w-8 h-12 inline
+}
+
+.upperSideBottom {
+  /* @apply break-words text-gray-800; */
+}
+
+.lowerSide {
+  /* @apply text-xs text-gray-500; */
+}
+
+
+.midBtn{
+  @apply bg-transparent border rounded-md w-[100%] border-[#dcdede]
+  mt-4 mb-9 p-4 text-[1rem] flex justify-start items-center gap-4
+}
+
+.addBtn{
+  @apply w-[1.5rem] h-[1.5rem]
+}
+.query{
+  @apply bg-transparent border rounded-md w-[100%] border-[#dcdede]
+mt-2 p-4 text-xs flex justify-start items-center gap-2 
+}
+
+.main{
+  @apply min-h-screen flex flex-col items-center my-24 mx-40
+}
+
+.chatbox{
+  max-width: 40rem;
+  height: calc(100vh - 17rem)
+  @apply overflow-hidden  overflow-y-scroll scroll-smooth w-full
+}
+
+.txt{
+  @apply text-sm
+}
+
+.chatImg{
+  @apply object-cover w-12 mr-7 rounded-lg
+}
+
+.bot{
+  width: fit-content;
+  @apply bg-[#48cfd66e] rounded-xl
+}
+
+.chat{
+  @apply flex  mt-[-2] mb-[-2] ml-4 mr-4 py-8 px-12 text-lg items-start
+}
+
+.chatFooter{
+  @apply mt-6 w-full flex flex-col items-center justify-center
+}
+.inp{
+  width: 40rem;
+  @apply p-2 bg-[#48cfd66e] rounded-xl flex items-center 
+}
+
+.inp>input{
+  width: calc(100% - 3rem);
+  @apply outline-none p-2 text-white
+}
+
+.inp>input, .send{
+  @apply bg-transparent border-none 
 }
 
 .chat-input {
-  @apply mt-4;
+  /* @apply mt-4; */
 }
 
-input {
-  @apply w-full p-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300;
-}
+/* input {
+ 
+} */

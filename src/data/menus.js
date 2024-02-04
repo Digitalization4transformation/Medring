@@ -15,7 +15,7 @@ import {
 const initMenu = [
   {
     label: "Dashboard",
-    path: "/",
+    path: "/dashboard",
     icon: faTachometer,
   },
   // {
@@ -23,7 +23,7 @@ const initMenu = [
   // },
   {
     label: "Comprehensive",
-    path: "/blank",
+    path: "/comprehensive",
     icon: faLeanpub,
   },
   {
@@ -42,7 +42,7 @@ const initMenu = [
   },
   {
     label: "Council Room",
-    path: "/table",
+    path: "/chatbot",
     icon: faTable,
   },
 

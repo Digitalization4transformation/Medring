@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* In your CSS or SCSS file */
+
+  
+
 .adminLayout {
     @apply flex md:h-screen h-[calc(100vh-4rem)] overflow-hidden bg-slate-100;
 }

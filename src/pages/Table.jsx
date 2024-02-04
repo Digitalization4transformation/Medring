@@ -114,7 +114,7 @@ function Table() {
               handleDelete={handleDelete}
             />
           </div>
-        </div>
+        </div> 
       </main>
     </>
   );

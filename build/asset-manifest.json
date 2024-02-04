@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b5a77b9c.css",
+    "main.js": "/static/js/main.e96e9760.js",
+    "static/media/bg-presentation3.jpg": "/static/media/bg-presentation3.7184af5c835596d434c9.jpg",
+    "static/media/medring.png": "/static/media/medring.56cd82b9a6127dd27438.png",
+    "static/media/send.svg": "/static/media/send.d5c3548070dcd955d16e68a5e184e9f7.svg",
+    "index.html": "/index.html",
+    "static/media/message.svg": "/static/media/message.abbd091f80dc5b34beba7502c0fef0f7.svg",
+    "main.b5a77b9c.css.map": "/static/css/main.b5a77b9c.css.map",
+    "main.e96e9760.js.map": "/static/js/main.e96e9760.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5a77b9c.css",
+    "static/js/main.e96e9760.js"
+  ]
+}
