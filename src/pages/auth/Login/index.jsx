@@ -3,7 +3,7 @@ import { faEnvelope, faLock } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { account } from "../../../appwrite/appwriteConfig";
+// import { account } from "../../../appwrite/appwriteConfig";
 import Logo from '../../../assets/medring.png'
 function LoginIndex() {
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ function LoginIndex() {
   const login  = (async (e) =>{
         try {
           setLoading(true)
-          await account.createEmailSession(user.email, user.password)
+          // await account.createEmailSession(user.email, user.password)
           navigate("/dashboard");
         } catch (error) {
           console.log(error);
