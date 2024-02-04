@@ -41,7 +41,7 @@ const initMenu = [
     icon: faUsers,
   },
   {
-    label: "Council Room",
+    label: "AI Chat",
     path: "/chatbot",
     icon: faTable,
   },
