@@ -33,7 +33,7 @@ function Dashboard() {
         <DashboardHeader
           toggle={sidebarToggle}
           avatar={avatar}
-          user={{ name: "Daniel Koomson" }}
+          user={{ name: "User" }}
         />
 
         {/* Main Content */}
